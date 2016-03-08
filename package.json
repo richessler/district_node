@@ -1,0 +1,33 @@
+{
+  "name": "thedistrict.in_node",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "serve-favicon": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "method-override": "*"
+  },
+  "engines": {
+    "node": "0.10.30",
+    "npm": "1.4.x"
+  },
+  "description": "Node.js Bootstrap Starter Template ===",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mcrundo/district_note.git"
+  },
+  "author": "mcrundo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcrundo/district_note/issues"
+  },
+  "homepage": "https://github.com/mcrundo/district_note#readme"
+}
