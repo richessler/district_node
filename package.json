@@ -1,14 +1,16 @@
 {
   "name": "thedistrict.in_node",
   "version": "0.0.1",
+  "private": true,
   "dependencies": {
-    "express": "*",
+    "express": "latest",
     "jade": "*",
     "stylus": "*",
     "serve-favicon": "*",
     "morgan": "*",
     "body-parser": "*",
-    "method-override": "*"
+    "method-override": "*",
+    "request": "~2.27.0"
   },
   "engines": {
     "node": "0.10.30",

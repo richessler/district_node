@@ -1,6 +1,21 @@
 extends layout
 
 block content
-	div.container
-		h1 Program Name
-		p Hello World
+  div.inner
+    h1 theDistrict.in
+    div.container
+      div.hero
+      div.row
+        for event in data
+          div.content
+            div.content--top
+              img(src=event.image)
+            div.content--main
+              h2
+                =event.title
+              h3
+                =event.venue_name
+              h3
+                =event.day
+                &nbsp;
+                =event.date

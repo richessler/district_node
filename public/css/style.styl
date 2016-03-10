@@ -1,0 +1,65 @@
+district-font = 'Josefin Sans', sans-serif;
+district-red = #ca221f;
+
+
+body
+  background: rgba(0,0,0,0.03);
+  padding-top: 25px;
+
+h1
+  color: district-red;
+  font-family: district-font;
+  font-size: 72px;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 30px;
+
+.inner
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+
+.container
+  background: white;
+  max-width: 980px;
+  width: 100%;
+
+.row
+  padding: 10px 20px;
+
+.content
+  border: 1px solid #eee;
+  display: inline-block;
+  margin: 0 auto 20px 20px;
+  padding: 10px 10px;
+  max-width: 296px;
+  vertical-align: top;
+  width: 100%;
+
+  &:nth-of-type(3n+1)
+    margin-left: 0
+
+  h2, h3, h4, h5, h6
+    margin: 5px 0;
+
+  h2
+    font-size: 18px;
+  h3
+    font-size: 16px;
+
+  img
+    position: absolute;
+    top: -30px;
+    width: 300px;
+
+  .content--top
+    display: block;
+    height: 120px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+
+  .content--main
+    display: block;
+    vertical-align: top;
