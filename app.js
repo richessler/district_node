@@ -38,11 +38,6 @@ var type = "events"
 * Init
 */
 
-// request(url, function(req, res, body) {
-//   res = JSON.parse(body);
-//   // console.log(res.events[0])
-//   }
-// );
 app.get('/', function(req, res, next) {
   request(url, function(err, response, body) {
     var r = JSON.parse(body);
@@ -51,28 +46,6 @@ app.get('/', function(req, res, next) {
     res.render('index', data)
   })
 });
-
-
-// app.use(function(req, res, next){
-//   res.locals.items = "Value";
-//   next();
-// })
-
-
-
-
-
-
-// request(url, function (error, response, body) {
-//   if (!error && response.statusCode == 200) {
-//     var response = JSON.parse(body);
-//     console.log("Got a response: ", response);
-//   } else {
-//     console.log("Got an error: ", error, ", status code: ", response.statusCode);
-//   }
-// });
-
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
