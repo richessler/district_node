@@ -3,13 +3,14 @@ body {
   padding-top: 25px;
 }
 h1 {
-  color: #ca221f;
+  background: #ca221f;
+  color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 72px;
   font-style: italic;
   font-weight: 700;
   margin: 0;
-  margin-left: 30px;
+  padding: 30px 10px 10px 20px;
 }
 .inner {
   margin: 0 auto;
