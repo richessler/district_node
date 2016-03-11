@@ -4,26 +4,48 @@ district-red = #ca221f;
 
 body
   background: rgba(0,0,0,0.03);
-  padding-top: 25px;
+  padding-top: 0;
+  position: relative;
+
+.footer
+  background: district-red;
+  color: white;
+  font-family: district-font;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 40px;
+  position: absolute;
+  width: 100%;
+
+  a
+    color: white;
 
 h1
-  background: #ca221f;
-  color: white;
   font-family: district-font;
   font-size: 72px;
   font-style: italic;
   font-weight: 700;
   margin: 0;
-  padding: 30px 10px 10px 20px;
+  -webkit-text-stroke: 1px white;
 
 .inner
   margin: 0 auto;
   max-width: 980px;
   width: 100%;
+  padding: 0 10px 10px 20px;
+
+.header
+  background: #ca221f;
+  border-top: 20px solid white;
+  color: white;
+  padding: 20px 20px 0 20px;
 
 .container
   background: white;
+  margin-bottom: 50px;
   max-width: 980px;
+  padding-top: 20px;
   width: 100%;
 
 .row
@@ -34,7 +56,7 @@ h1
   display: inline-block;
   margin: 0 auto 10px 10px;
   padding: 10px;
-  max-width: 310px;
+  max-width: 300px;
   vertical-align: top;
   width: 100%;
 
