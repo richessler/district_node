@@ -42,7 +42,6 @@ app.get('/', function(req, res, next) {
   request(url, function(err, response, body) {
     var r = JSON.parse(body);
     data = r.events
-    console.log(data)
     res.render('index', data)
   })
 });
