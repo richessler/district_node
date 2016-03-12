@@ -103,8 +103,12 @@ h1 {
   background: #ca221f;
   bottom: 0;
   color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
   margin: 15px 0 10px 0;
-  padding: 10px;
+  padding-top: 10px;
   position: absolute;
   text-align: center;
   width: 93%;

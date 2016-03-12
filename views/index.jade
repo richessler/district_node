@@ -18,9 +18,9 @@ block content
                 =event.title
               h3
                 =event.venue_name
-              div.row--link
-                a(href=event.seatgeek_url, target="blank")
-                  =event.price ? event.price : 'Tickets'
+                a(href=event.seatgeek_url, target="blank", class="event-link")
+                  div.row--link
+                    =event.price ? event.price : 'Buy Tickets'
 
 
 
