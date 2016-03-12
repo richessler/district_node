@@ -29,7 +29,9 @@ h1 {
   margin: 0 auto;
   max-width: 980px;
   width: 100%;
-  padding: 0 10px 10px 20px;
+}
+.row {
+  margin: 0;
 }
 .header {
   background: #ca221f;
@@ -41,18 +43,24 @@ h1 {
   background: #fff;
   margin-bottom: 50px;
   max-width: 980px;
-  padding-top: 20px;
-  width: 100%;
+  padding: 15px;
 }
-.row {
-  padding: 10px;
+.hero {
+  padding-bottom: 20px;
+  position: relative;
+}
+.hero label {
+  display: inline;
+  margin-right: 30px;
 }
 .content {
   border: 1px solid #eee;
   display: inline-block;
   margin: 0 auto 10px 10px;
   padding: 10px;
-  max-width: 300px;
+  max-width: 307px;
+  min-height: 272px;
+  position: relative;
   vertical-align: top;
   width: 100%;
 }
@@ -74,8 +82,8 @@ h1 {
 }
 .content img {
   position: absolute;
-  top: -30px;
-  width: 300px;
+  min-height: 100%;
+  width: 100%;
 }
 .content .content--top {
   display: block;
@@ -87,4 +95,17 @@ h1 {
 .content .content--main {
   display: block;
   vertical-align: top;
+}
+.content .row--link {
+  background: #ca221f;
+  bottom: 0;
+  color: #fff;
+  margin: 15px 0 10px 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 93%;
+}
+.content .row--link a {
+  color: #fff;
 }

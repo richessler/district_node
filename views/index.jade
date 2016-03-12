@@ -6,6 +6,7 @@ block content
       h1 theDistrict.in
     div.container
       div.hero
+        h2 Happen.in Today
       div.row
         for event in data
           div.content
@@ -16,7 +17,9 @@ block content
                 =event.title
               h3
                 =event.venue_name
-              h3
-                =event.day
-                &nbsp;
-                =event.date
+              div.row--link
+                a(href=event.seatgeek_url, target="blank")
+                  =event.price ? event.price : 'Tickets'
+
+
+
