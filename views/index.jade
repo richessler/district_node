@@ -15,12 +15,14 @@ block content
               img(src=event.image)
             div.content--main
               h2
-                =event.title
+                =event.short_title
               h3
                 =event.venue_name
-                a(href=event.seatgeek_url, target="blank", class="event-link")
-                  div.row--link
-                    =event.price ? event.price : 'Buy Tickets'
+              span(class='tag--top-right #{event.state}')
+                =event.state
+              a(href=event.seatgeek_url, target="blank", class="event-link")
+                div.row--link
+                  Buy Tickets
 
 
 

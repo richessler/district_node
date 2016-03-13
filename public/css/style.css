@@ -32,6 +32,7 @@ h1 {
 }
 .row {
   margin: 0;
+  text-align: center;
 }
 .header {
   background: #ca221f;
@@ -60,10 +61,11 @@ h1 {
   border: 1px solid #eee;
   display: inline-block;
   margin: 0 auto 10px 10px;
-  padding: 10px;
   max-width: 307px;
   min-height: 272px;
+  padding: 10px;
   position: relative;
+  text-align: left;
   vertical-align: top;
   width: 100%;
 }
@@ -115,4 +117,25 @@ h1 {
 }
 .content .row--link a {
   color: #fff;
+}
+.content .tag--top-right {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.content .DC {
+  background: #ca221f;
+}
+.content .VA {
+  background: #002a79;
+}
+.content .MD {
+  background: #ffd51a;
+  color: #000;
 }
