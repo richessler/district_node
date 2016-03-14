@@ -8,7 +8,7 @@ block content
         for event in data
           div(class="content" id="#{event.event_id}")
             div.content--top
-              a(href="/event/#{event.event_id}")
+              a(href="/event/#{event.event_id}/#{event.slug}")
                 img(src=event.image)
             div.content--main
               h2
