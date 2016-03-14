@@ -9,7 +9,8 @@ block content
         div.content--top.content--show
           img(src=event.image)
           h2
-            = event.venue_name
+            a(href="venue/#{event.venue_id}")
+              = event.venue_name
           h3
             = event.day + ' '
             = event.date + ' '
