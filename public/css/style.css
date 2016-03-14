@@ -1,11 +1,20 @@
 body {
   background: rgba(0,0,0,0.03);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 0;
   position: relative;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .footer {
   background: #ca221f;
+  bottom: 0;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
@@ -25,6 +34,10 @@ h1 {
   font-weight: 700;
   margin: 0;
   -webkit-text-stroke: 1px #fff;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
 }
 iframe {
   float: left;
@@ -58,8 +71,9 @@ iframe {
   background: #fff;
   min-height: 800px;
   max-width: 980px;
+  overflow: auto;
   padding: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 }
 .container h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -78,9 +92,10 @@ iframe {
 }
 .content {
   border: 1px solid #eee;
+  box-sizing: border-box;
   float: left;
   margin: 0 auto 10px 10px;
-  max-width: 307px;
+  max-width: 309px;
   min-height: 272px;
   padding: 10px;
   position: relative;
@@ -144,6 +159,7 @@ iframe {
   color: #fff;
   font-weight: bold;
   padding: 2px 10px;
+  pointer: default;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -179,12 +195,11 @@ iframe {
   bottom: 0;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 28px;
+  font-size: 38px;
   font-style: italic;
   font-weight: 700;
   height: 50px;
-  margin-top: 0px;
-  padding-top: 10px;
+  line-height: 60px;
   position: absolute;
   right: 0;
   text-align: center;

@@ -14,9 +14,7 @@ block content
           h3
             = event.day + ' '
             = event.date + ' '
-          h3
-            = event.price
           a(href=event.seatgeek_url, target="blank", class="event-link")
             div.row--link
-              Buy Tickets
+              = event.price
         p !{event.description}

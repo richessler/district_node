@@ -67,13 +67,14 @@ app.get('/search/:query', function(req, res, next) {
 });
 
 
-app.get('/event/:event_id', function(req, res, next) {
+app.get('/event/:event_id/:event_slug', function(req, res, next) {
 
   params = '&event_id=' + req.params.event_id
 
   request(url + params, function(err, response, body) {
     var r = JSON.parse(body);
     data = r.events
+    req.url = data.slug
     res.render('show', data)
   })
 });
