@@ -4,6 +4,7 @@ district-red = #ca221f;
 
 body
   background: rgba(0,0,0,0.03);
+  font-size: 16px;
   padding-top: 0;
   position: relative;
 
@@ -29,6 +30,11 @@ h1
   margin: 0;
   -webkit-text-stroke: 1px white;
 
+iframe
+  float: left;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
 .inner
   margin: 0 auto;
   max-width: 980px;
@@ -47,11 +53,23 @@ h1
     margin: 0 auto;
     max-width: 950px;
 
+  a
+    color: white;
+    text-decoration: none;
+
 .container
   background: white;
-  margin-bottom: 50px;
+  min-height: 800px;
   max-width: 980px;
   padding: 15px;
+  padding-bottom: 50px;
+
+  h1
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 48px;
+    font-style: inherit;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 0;
 
 .hero
   padding-bottom: 20px;
@@ -63,7 +81,7 @@ h1
 
 .content
   border: 1px solid #eee;
-  display: inline-block;
+  float: left;
   margin: 0 auto 10px 10px;
   max-width: 307px;
   min-height: 272px;
@@ -135,4 +153,37 @@ h1
   .MD
     background: #ffd51a;
     color: black;
+
+.content--show
+  border-bottom: 10px solid district-red;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative;
+
+  img
+    float: left;
+    padding-right: 20px;
+
+  h2, h3
+    margin-top: 0;
+
+  .row--link
+    background: district-red;
+    bottom: 0;
+    color: white;
+    font-family: district-font;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 200px;
+
 

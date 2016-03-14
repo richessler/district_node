@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.inner
+    div.container
+      for event in data
+        h1
+          = event.title
+        div.content--top.content--show
+          img(src=event.image)
+          h2
+            = event.venue_name
+          h3
+            = event.day + ' '
+            = event.date + ' '
+          h3
+            = event.price
+          a(href=event.seatgeek_url, target="blank", class="event-link")
+            div.row--link
+              Buy Tickets
+        p !{event.description}

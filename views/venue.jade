@@ -8,17 +8,13 @@ block content
         for event in data
           div(class="content" id="#{event.event_id}")
             div.content--top
-              a(href="event/#{event.event_id}")
+              a(href="/event/#{event.event_id}")
                 img(src=event.image)
             div.content--main
               h2
                 =event.short_title
               h3
-                a(href="venue/#{event.venue_id}")
-                  =event.venue_name
-              if event.state && event.state.length < 3
-                span(class='tag--top-right #{event.state}')
-                  =event.state
+                =event.date
               a(href=event.seatgeek_url, target="blank", class="event-link")
                 div.row--link
                   Buy Tickets
