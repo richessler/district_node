@@ -61,8 +61,6 @@ app.get('/search/:query', function(req, res, next) {
 
   params = '&' + req.params.query
 
-  console.log(req)
-
   request(url + params, function(err, response, body) {
     var r = JSON.parse(body);
     data = r.events
