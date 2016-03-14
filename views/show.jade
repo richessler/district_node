@@ -15,6 +15,10 @@ block content
             = event.day + ' '
             = event.date + ' '
           a(href=event.seatgeek_url, target="blank", class="event-link")
-            div.row--link
-              = event.price
+            if event.eventStatus != 'Sold Out'
+              div.row--link
+                =event.price
+            else
+              div.row--link.sold-out
+                =event.eventStatus
         p !{event.description}

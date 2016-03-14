@@ -15,13 +15,18 @@ block content
                 =event.short_title
               h3
                 a(href="venue/#{event.venue_id}")
-                  =event.venue_name
+                  =event.venue_name + ' '
+                =event.date
               if event.state && event.state.length < 3
                 span(class='tag--top-right #{event.state}')
                   =event.state
               a(href=event.seatgeek_url, target="blank", class="event-link")
-                div.row--link
-                  Buy Tickets
+                if event.eventStatus != 'Sold Out'
+                  div.row--link
+                    Buy Tickets
+                else
+                  div.row--link.sold-out
+                    =event.eventStatus
 
 
 

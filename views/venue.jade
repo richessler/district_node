@@ -16,8 +16,12 @@ block content
               h3
                 =event.date
               a(href=event.seatgeek_url, target="blank", class="event-link")
-                div.row--link
-                  Buy Tickets
+                if event.eventStatus != 'Sold Out'
+                  div.row--link
+                    Buy Tickets
+                else
+                  div.row--link.sold-out
+                    =event.eventStatus
 
 
 

@@ -223,6 +223,9 @@ iframe {
   top: 0;
   width: 200px;
 }
+.sold-out {
+  background: #666 !important;
+}
 @media all and (max-width: 976px) {
   .content:nth-of-type(3n + 1) {
     margin: 0 auto 10px 10px;
@@ -286,6 +289,7 @@ iframe {
   .content .content--top {
     float: left;
     height: 105px;
+    max-width: 85px;
     overflow: hidden;
     width: 25%;
   }
