@@ -223,12 +223,20 @@ iframe {
   top: 0;
   width: 200px;
 }
-@media all and (min-width: 780px) {
+@media all and (max-width: 976px) {
+  .content:nth-of-type(3n + 1) {
+    margin: 0 auto 10px 10px;
+  }
+  .content:nth-of-type(odd) {
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 480px) {
   .mobile {
     display: none;
   }
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 480px) {
   .desktop {
     display: none;
   }
@@ -278,7 +286,7 @@ iframe {
   .content .content--top {
     float: left;
     height: 105px;
-    overflow: auto;
+    overflow: hidden;
     width: 25%;
   }
   .content .content--main {
