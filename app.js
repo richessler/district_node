@@ -10,7 +10,6 @@ var express = require('express')
   , request = require('request')
   , bodyParser = require('body-parser')
   , favicon = require('serve-favicon')
-  , strftime = require('strftime')
   , logger = require('morgan')
   , methodOverride = require('method-override');
 
