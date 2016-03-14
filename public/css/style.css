@@ -269,7 +269,7 @@ iframe {
   }
   .content {
     height: 117px;
-    margin-left: 0;
+    margin-left: 0 !important;
     min-height: 0;
     min-width: 100%;
     padding: 5px;
