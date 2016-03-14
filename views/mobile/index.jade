@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+  div.container
+    for event in data
+      div(class="content content--mobile" id="#{event.event_id}")
+        div.content--top
+          a(href="event/#{event.event_id}/#{event.slug}")
+            img(src=event.image)
+        div.content--main
+          h2
+            =event.short_title
+          h3
+            a(href="venue/#{event.venue_id}")
+              =event.venue_name
+          if event.state && event.state.length < 3
+            span(class='tag--top-right tag--top-right--mobile #{event.state}')
+              =event.state
+          a(href=event.seatgeek_url, target="blank", class="event-link")
+            div.row--link
+              Buy Tickets

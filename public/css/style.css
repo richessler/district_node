@@ -223,3 +223,101 @@ iframe {
   top: 0;
   width: 200px;
 }
+@media all and (min-width: 780px) {
+  .mobile {
+    display: none;
+  }
+}
+@media all and (max-width: 780px) {
+  .desktop {
+    display: none;
+  }
+  body,
+  h1 {
+    font-size: 55px;
+  }
+  h2,
+  h3 {
+    margin: 0;
+  }
+  iframe {
+    margin-bottom: 15px;
+    padding: 0;
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .container {
+    padding: 10px;
+    padding-bottom: 250px;
+  }
+  .container h1 {
+    font-size: 24px;
+  }
+  .hero {
+    padding: 0;
+  }
+  .content {
+    height: 117px;
+    margin-left: 0;
+    min-height: 0;
+    min-width: 100%;
+    padding: 5px;
+  }
+  .content h2,
+  .content h3 {
+    margin: 0 5px;
+  }
+  .content img {
+    max-height: 130px;
+    position: absolute;
+    width: auto;
+  }
+  .content .content--top {
+    float: left;
+    height: 105px;
+    overflow: auto;
+    width: 25%;
+  }
+  .content .content--main {
+    float: left;
+    margin-left: 5px;
+    width: 73%;
+  }
+  .content .row--link {
+    bottom: 5px;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 6px;
+    width: 71%;
+  }
+  .content .tag--top-right {
+    display: none;
+  }
+  .content--show {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 15px;
+    padding-top: 50px;
+  }
+  .content--show h2,
+  .content--show h3 {
+    font-size: 24px;
+  }
+  .content--show img {
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+  }
+  .content--show .row--link {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 24px;
+  }
+  .footer li {
+    font-size: 48px;
+  }
+}
