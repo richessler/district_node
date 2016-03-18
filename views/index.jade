@@ -21,7 +21,7 @@ block content
                 span(class='tag--top-right #{event.state}')
                   =event.state
               a(href=event.seatgeek_url, target="blank", class="event-link")
-                if event.eventStatus != 'Sold Out'
+                if event.eventStatus != 'Sold Out' || 'None Available'
                   div.row--link
                     Buy Tickets
                 else
