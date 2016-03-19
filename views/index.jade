@@ -15,8 +15,11 @@ block content
                 =event.short_title
               h3
                 a(href="venue/#{event.venue_id}")
+                  i.fa.fa-university &nbsp;
                   =event.venue_name + ' '
-                =event.date
+                span.pull-right
+                  i.fa.fa-calendar-o &nbsp;
+                  =event.date
               if event.state && event.state.length < 3
                 span(class='tag--top-right #{event.state}')
                   =event.state
