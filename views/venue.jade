@@ -4,9 +4,11 @@ block content
   div.inner
     div.container
       div.hero
+        h1
+          =venue_name
       div.row
         for event in data
-          div(class="content" id="#{event.event_id}")
+          div(class="content content--venue" id="#{event.event_id}")
             div.content--top
               a(href="/event/#{event.event_id}/#{event.slug}")
                 img(src=event.image)
@@ -14,6 +16,7 @@ block content
               h2
                 =event.short_title
               h3
+                i.fa.fa-calendar-o &nbsp;
                 =event.date
               a(href=event.seatgeek_url, target="blank", class="event-link")
                 if event.eventStatus != 'Sold Out'
