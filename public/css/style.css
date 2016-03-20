@@ -116,7 +116,7 @@ iframe {
   float: left;
   margin: 0 auto 10px 10px;
   max-width: 309px;
-  min-height: 272px;
+  min-height: 286px;
   padding: 10px;
   position: relative;
   text-align: left;
@@ -137,6 +137,9 @@ iframe {
   font-size: 18px;
 }
 .content h3 {
+  font-size: 14px;
+}
+.content h4 {
   font-size: 13px;
 }
 .content img {
@@ -282,7 +285,7 @@ iframe {
     padding: 0;
   }
   .content {
-    height: 117px;
+    height: 120px;
     margin-left: 0 !important;
     min-height: 0;
     min-width: 100%;
@@ -290,7 +293,7 @@ iframe {
   }
   .content h2,
   .content h3 {
-    margin: 0 5px 2px 0;
+    margin: 0 5px 1px 0;
   }
   .content h2 {
     font-size: 16px;
@@ -310,7 +313,7 @@ iframe {
   }
   .content .content--top {
     float: left;
-    height: 105px;
+    height: 108px;
     max-width: 85px;
     overflow: hidden;
     width: 25%;

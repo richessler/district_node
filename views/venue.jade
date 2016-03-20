@@ -18,6 +18,9 @@ block content
               h3
                 i.fa.fa-calendar-o &nbsp;
                 =event.date
+              h4
+                i.fa.fa-clock-o
+                =event.time
               a(href=event.seatgeek_url, target="blank", class="event-link")
                 if event.eventStatus != 'Sold Out'
                   div.row--link
