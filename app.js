@@ -87,6 +87,8 @@ app.get('/venue/:venue_id', function(req, res, next) {
     var r = JSON.parse(body);
     data = r.events
     venue_name = data[0].venue_name
+    venue_blurb = data[0].venue_blurb
+    console.log(venue_blurb)
     console.log(venue_name)
     res.render('venue', data)
   })

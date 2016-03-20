@@ -6,6 +6,8 @@ block content
       div.hero
         h1
           =venue_name
+        p
+          =venue_blurb
       div.row
         for event in data
           div(class="content content--venue" id="#{event.event_id}")
