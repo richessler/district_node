@@ -12,6 +12,10 @@ block content
             a(href="/venue/#{event.venue_id}")
               i.fa.fa-university &nbsp;
               = event.venue_name
+          h2
+            a(href="http://www.google.com/maps?q=#{event.venue_name} #{event.address}" target="_blank")
+              i.fa.fa-map-marker &nbsp;
+                =event.address
           h3
             i.fa.fa-calendar-o &nbsp;
             = event.day + ' '
